@@ -4,7 +4,7 @@ import akka.zeromq._
 import akka.actor.{ ActorSystem, Actor, Props }
 
 object ZMQApplication extends App {
-  val numberOfMessages = 100000
+  val numberOfMessages = 10000
   val system = ActorSystem("zmq")
   val diagnostics = system.actorOf(Props[Diagnostics])
   val pubSocket = ZeroMQExtension(system).newSocket(SocketType.Pub, Bind("tcp://127.0.0.1:1234"))
