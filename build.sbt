@@ -13,3 +13,5 @@ libraryDependencies ++= Seq(
 	"com.typesafe.akka" % "akka-testkit" % "2.0",
 	"com.typesafe.akka" % "akka-kernel" % "2.0"
 )
+
+libraryDependencies += "org.zeromq" %% "zeromq-scala-binding" % "0.0.5"
